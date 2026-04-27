@@ -1,0 +1,58 @@
+.viewport {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  display: grid;
+  gap: 10px;
+  width: min(420px, calc(100vw - 32px));
+}
+
+.toast {
+  border-radius: 14px;
+  padding: 12px 12px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.message {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.35;
+  color: var(--muted);
+  word-break: break-word;
+}
+
+.close {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+.close:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.error {
+  border-color: rgba(255, 107, 107, 0.35);
+  background: var(--danger-bg);
+}
+
+.error .title {
+  color: var(--danger);
+}
+
+
