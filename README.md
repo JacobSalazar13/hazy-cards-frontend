@@ -36,3 +36,5 @@
 - `npm run build` — production build
 - `npm start` — run production build
 - `npm run lint` — ESLint
+
+![Screenshot of the dashboard and what the application looks like](/Users/jacob/Documents/github_3/hazy-cards-frontend/Screenshot.png)
